@@ -19,18 +19,18 @@ a:hover{
 	text-decoration: underline;
 }
 
-#gallery{
+#images{
 	z-index: -1;
 }
 
-#text{
+#words{
 	z-index: 1;
 }
 
-#gallery:target{
+#images:target{
 	z-index: 2;
 }
 
-#text:target{
+#words:target{
 	z-index: -1;
 }
