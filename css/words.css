@@ -56,8 +56,8 @@ for columns with text only
 
 .text-container .xin-container .caption span:hover,
 .text-container .cuo-container .caption span:hover{
-	color: lightgrey;
-	background-color: black;
+	color: black;
+	background-color: yellow;
 	opacity: 1;
 	text-decoration: underline;
 }
