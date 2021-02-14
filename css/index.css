@@ -12,8 +12,75 @@ html, body{
 	animation: roach-move linear infinite;
 	-webkit-animation: roach-move linear infinite;
 	-moz-animation: roach-move linear infinite;
+	-o-animation: roach-move linear infinite;
 	filter: drop-shadow(0 0 15px grey);
-	display:none;
+	display: block;
+}
+
+@-moz-keyframes roach-move {
+	0%{
+		opacity: 0;
+		motion-offset: 0%;
+		offset-distance: 0%;
+	}
+	
+	10%{
+		opacity: 1;
+	}   
+
+	90%{
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		motion-offset: 100%;
+    	offset-distance: 100%;
+   	}
+}
+
+@-o-keyframes roach-move {
+	0%{
+		opacity: 0;
+		motion-offset: 0%;
+		offset-distance: 0%;
+	}
+	
+	10%{
+		opacity: 1;
+	}   
+
+	90%{
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		motion-offset: 100%;
+    	offset-distance: 100%;
+   	}
+}
+
+@-webkit-keyframes roach-move {
+	0%{
+		opacity: 0;
+		motion-offset: 0%;
+		offset-distance: 0%;
+	}
+	
+	10%{
+		opacity: 1;
+	}   
+
+	90%{
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		motion-offset: 100%;
+    	offset-distance: 100%;
+   	}
 }
 
 @keyframes roach-move {
@@ -39,121 +106,145 @@ html, body{
 }
 
 .roach-container .one{
+	-webkit-animation-duration: 5s;
 	animation-duration: 5s;
 	offset-path: path('M198.09,800S221.58,302.51,675,288.41,1280,0,1280,0');
 }
 
 .roach-container .two{
+	-webkit-animation-duration: 8s;
 	animation-duration: 8s;
 	offset-path: path('M0,516.52s82.75-166.24,385.15-90.24S603.63,662.18,871.2,651.1s202.65-302.4,17.41-323S751,73.22,1050.17,173c0,0,195.32,58.58,229.83,115.58');
 }
 
 .roach-container .three{
+	-webkit-animation-duration: 6s;
 	animation-duration: 6s;
 	offset-path: path('M1280,800S557.51,786.44,393.07,617.3s-51.68-267.81,0-338.28,88.8-250.3-86-279');
 }
 
 .roach-container .four{
+	-webkit-animation-duration: 4s;
 	animation-duration: 4s;
 	offset-path: path('M952.17,0S564.56,6.51,376.62,140.42s197.33,392.31,592,281.9S1072,800,1072,800');
 }
 
 .roach-container .five{
+	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 	offset-path: path('M0,39.4s85.33,451,388.37,360.6S750.14,18.26,982.71,187.4s476.88,372.45-242,612.6');
 }
 
 .roach-container .six{
+	-webkit-animation-duration: 6s;
 	animation-duration: 6s;
 	offset-path: path('M1050.84,0S1227,105.18,1088.42,279s-246.66-70.48-390-82.22S278,264.92,266.21,488.09,1011.14,531.66,1280,800');
 }
 
 .roach-container .seven{
+	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 	offset-path: path('M0,532.27S493.63,231.45,640,220.85s360.34-114.4,396.35-33.89-25.42,130.63,31.78,157.47S1275.79,699.63,1280,742');
 }
 
 .roach-container .eight{
+	-webkit-animation-duration: 8s;
 	animation-duration: 8s;
 	offset-path: path('M1002.45,0s-137.7,206,0,282.29,311.42,180.07,112.28,247.86-572-394-692.74-389.8S73.74,210.26,0,246.28');
 }
 
 .roach-container .nine{
+	-webkit-animation-duration: 4s;
 	animation-duration: 4s;
 	offset-path: path('M0,55.61S78.79,475.07,203.78,483.55s163.13-230.92,214-222.45,408.87-161,368.62,161S1280,667.85,1280,667.85');
 }
 
 .roach-container .ten{
+	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 	offset-path: path('M239.8,0s-8.48,87.39-86.86,131.88S6.77,265.61,64,400,477.07,800,477.07,800');
 }
 
 .roach-container .eleven{
+	-webkit-animation-duration: 5s;
 	animation-duration: 5s;
 	offset-path: path('M0,767.42S93.62,470.83,250.39,449.65s245.75-233,114.4-254.22S49.13,0,49.13,0');
 }
 
 .roach-container .twelve{
+	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 	offset-path: path('M1051.18,0S256.75,89.51,155.06,201.79s63.55,89,38.13,207.61S69.16,477.19,121.64,653s421.1,57.2,421.1,57.2,411-110.68,370.74,89.78');
 }
 
 .roach-container .thirteen{
+	-webkit-animation-duration: 6s;
 	animation-duration: 6s;
 	offset-path: path('M1280,367s-190.69,171.6-523.29,8.47S157.18,64.09,129.64,337.37,565.23,669.45,0,800');
 }
 
 .roach-container .fourteen{
+	-webkit-animation-duration: 5s;
 	animation-duration: 5s;
 	offset-path: path('M320.3,800S712.22,684.8,652.9,443.29s-455.47-80.5-449.12-188.54S797,29.13,1146.51,0');
 }
 
 .roach-container .fifteen{
+	-webkit-animation-duration: 4s;
 	animation-duration: 4s;
 	offset-path: path('M580.88,0s461.83,210.26,455.47,390.33S203.78,252.11,250.39,800');
 }
 
 .roach-container .sixteen{
+	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 	offset-path: path('M1280,800s-10.62-433-483-545.25S574.52,318.3,341.49,371.27,0,0,0,0');
 }
 
 .roach-container .seventeen{
+	-webkit-animation-duration: 7s;
 	animation-duration: 7s;
 	offset-path: path('M716.46,800s417.34-210.53,394-365.18-463.95-27.54-701.22,0,29.66-273.28-129.23-302.94S0,465.94,0,465.94');
 }
 
 .roach-container .eighteen{
+	-webkit-animation-duration: 5s;
 	animation-duration: 5s;
 	offset-path: path('M640,0S981.27,187,919.83,390.33s-298.7,8.48-379.21,33.9S291.94,381.86,0,722.93');
 }
 
 .roach-container .nineteen{
+	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 	offset-path: path('M1280,117.05s-38.16,158.88-222.46,137.7S705.87,472.43,1104.14,800');
 }
 
 .roach-container .twenty{
+	-webkit-animation-duration: 4s;
 	animation-duration: 4s;
 	offset-path: path('M377.5,800s641.9-96.13,669.44-261.37-36-347.44-243.62-353.79S750.35,0,750.35,0');
 }
 
 .roach-container .twentyone{
+	-webkit-animation-duration: 4s;
 	animation-duration: 4s;
 	offset-path: path('M409.28,0S157.18,148.82,288.52,271.7s697-29.66,667.33,203.37S676.21,677.93,330.89,800');
 }
 
 .roach-container .twentytwo{
+	-webkit-animation-duration: 6s;
 	animation-duration: 6s;
 	offset-path: path('M994,0s209.73,237.8,0,350.08-175.83-80.5-493.61-59.32S28,439.06,167.77,576.76,953.73,800,953.73,800');
 }
 
 .roach-container .twentythree{
+	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 	offset-path: path('M557.57,800S871.11,648.79,799.08,468.72,521.56,466.6,419.87,295c0,0-207.61-108-156.77,122.87S214.38,800,214.38,800');
 }
 
 .roach-container .twentyfour{
+	-webkit-animation-duration: 7s;
 	animation-duration: 7s;
 	offset-path: path('M1104.14,0S123.28,144.59,66.08,284.41s601.65,230.91,595.3,315.65S1280,800,1280,800');
 }
