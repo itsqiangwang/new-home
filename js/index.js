@@ -75,10 +75,12 @@ setInterval(roachDensity, 1);
 
 function mouseOver() {
     document.getElementById("roach-container").style.opacity = "0";
+    document.getElementById("mode-switch").style.display = "none";
 }
   
 function mouseOut() {
     document.getElementById("roach-container").style.opacity = "1";
+    document.getElementById("mode-switch").style.display = "block";
 }
 
 for(let i = 0; i < captionsTotal; i++){
