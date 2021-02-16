@@ -72,14 +72,16 @@ function roachDensity(){
 }
 setInterval(roachDensity, 1);
 
-
+//hide roaches when hovering over captions
 function mouseOver() {
     document.getElementById("roach-container").style.opacity = "0";
+    document.getElementById("static-roach-container").style.display = "none";
     document.getElementById("mode-switch").style.display = "none";
 }
   
 function mouseOut() {
     document.getElementById("roach-container").style.opacity = "1";
+    document.getElementById("static-roach-container").style.display = "block";
     document.getElementById("mode-switch").style.display = "block";
 }
 
@@ -91,6 +93,22 @@ for(let i = 0; i < captionsTotal; i++){
         mouseOut()
     };
 }
+
+//static roaches for mobile and tablet
+// document.getElementById('1').style = 'opacity: 0';
+
+let staticRoach = document.getElementsByClassName('static-roach');
+function callStaticRoach(){
+    let d = new Date();
+    let roachIndex = d.getHours();
+    for (let i=0; i<roachIndex; i++){
+        let randomRotate = Math.floor(Math.random() * 360);
+        let randomPositionW = Math.floor(Math.random() * 95);
+        let randomPositionH = Math.floor(Math.random() * 95);
+        staticRoach[roachIndex-i-1].style = 'display: flex; transform: rotate(' + randomRotate + 'deg) scale(' + roachIndex / 15 + '); left:' + randomPositionW + 'vw; top: ' + randomPositionH + 'vh;';
+    }
+}
+setInterval(callStaticRoach, 100);
 
 console.log('captionsTotal: ' + captionsTotal);
 console.log('captionsChosenNumber: ' + captionsChosenNumber);
