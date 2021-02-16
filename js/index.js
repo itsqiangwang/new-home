@@ -95,7 +95,6 @@ for(let i = 0; i < captionsTotal; i++){
 }
 
 //static roaches for mobile and tablet
-// document.getElementById('1').style = 'opacity: 0';
 
 let staticRoach = document.getElementsByClassName('static-roach');
 function callStaticRoach(){
