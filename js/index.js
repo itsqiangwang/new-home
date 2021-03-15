@@ -107,7 +107,7 @@ function callStaticRoach(){
         staticRoach[roachIndex-i-1].style = 'display: flex; transform: rotate(' + randomRotate + 'deg) scale(' + roachIndex / 15 + '); left:' + randomPositionW + 'vw; top: ' + randomPositionH + 'vh;';
     }
 }
-setInterval(callStaticRoach, 100);
+setInterval(callStaticRoach, 200);
 
 console.log('captionsTotal: ' + captionsTotal);
 console.log('captionsChosenNumber: ' + captionsChosenNumber);
